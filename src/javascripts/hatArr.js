@@ -3,14 +3,14 @@ export const hats_Gal = [{
         "title": "Basic ridding hat",
         "year": 1844,
         "description": "Blak pointy ridding hat. you choice of feathers",
-        "pic": "/image1405.jpg"
+        "pic": "/images/image1405.jpg"
     },
     {
         "id": 2,
         "title": "Bonnet",
         "year": 1820,
         "description": "classic Bonnet and bow.",
-        "pic": "/image1409.jpg"
+        "pic": "/images/image1409.jpg"
     },
     {
         "id": 3,
@@ -24,6 +24,6 @@ export const hats_Gal = [{
         "title": "Elegant ridding hat",
         "year": 1860,
         "description": "Elegant ridding hat. the feather can be replaced with a flower if needed.",
-        "pic": "/image1497.jpg"
+        "pic": "/images/image1497.jpg"
     }
 ]
