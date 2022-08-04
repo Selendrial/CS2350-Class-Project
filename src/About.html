@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Wildhorse Fashion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="CS2350 class project" />
+  <script type="module" src="./javascripts/main.js"></script>
+  <link rel="stylesheet" href="./stylesheets/main.css" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-md">
+      <div class=" navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Clothing
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="hats.html">Hats</a></li>
+                    <li><a class="dropdown-item" href="dresses.html">Dresses</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <button class="btn btn-success ms-auto" onclick="document.location='contact.html'">Contact Us</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron container-sm-fluid py-5" id="tron">
+    <div class="py-5 mx-5">
+      <h1 class="display-1">
+        Wildhorse Fashion
+      </h1>
+      <p class="text-white"> Elegance, Grace, Beauty</p>
+    </div>
+  </div>
+  <div class="container my-3 mx-auto">
+    <div class="row row-col">
+
+      <div class="col">
+        <h1>About me</h1>
+        <h4>
+          It is not very often that a person has the opportunity to combine three of their loves or passions into one. I
+          have been fortunate to be able to combine my love of horses, living history/historical reenacting, and sewing
+          into one. I found when I began riding side saddle there were very few affordable resources for clothing and
+          hats- none for period outfits. So through research, trial and error, and a lot of elbow grease, I began making
+          my own clothing and hats. People wanted to know how they could get a habit so I
+          began making them for others. Then I began making and selling a gown here, another there and Wildhorse Fashion
+          was born. I have made clothing for many wonderful people from all over the world - Canada, Ireland, England,
+          France, Japan, Belgium, Australia, the Netherlands and Israel. I take great pride in every article I make or
+          have ever made. Each piece takes on it's own personality as it evolves. I have expanded my interests to
+          include riding habits, hats, reticules (purses), capes, shawls, accessories, carpet bags, haversacks and men's
+          clothing. Although I specialize in period riding habits of the 1840's, 1860s, 1870s, and 1880s. I also make
+          modern habits as well. You should have exactly what you are looking for whether it be a period correct 1860s
+          style gown or the perfect outfit for that horse expo, demonstration or parade. I am not an official, fixed
+          location, mass production business-this is a personal venture for me, I make gowns for friends. I make each
+          piece myself with love and as much attention to detail as I possibly can. Give me a call or contact me by
+          email. I would be happy to help you make your dreams come true.
+        </h4>
+      </div>
+      <div class="col ">
+        <button class="btn btn-success ms-auto" id="new_review">Leave a Review</button>
+
+        <form id="myForm" class="d-none" method="post">
+          <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="Text" class="form-control" id="title" name="title" placeholder="Enter Title Here">
+          </div>
+          <div class="mb-3">
+            <label for="comment" class="form-label">Comment</label>
+            <textarea class="form-control" id="comment" name="comment" placeholder="Enter Comment Here"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="fname" class="form-label">First Name</label>
+            <input type="Text" class="form-control" id="fname" name="fname" placeholder="Enter First Name Here">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-danger to-cancel">Cancel</button>
+        </form>
+        <div class="row row-col-2 my-5" id="review_card">
+          <!--Dynamic reviews added here content-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="mt-2 bg-dark py-2 text-light fixed-bottom">
+    <p class="text-center">
+      &copy; All Rights Reserved
+    </p>
+  </footer>
+
+</body>
+
+</html>

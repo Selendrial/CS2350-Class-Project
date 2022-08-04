@@ -7,12 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="index,follow" />
   <meta name="description" content="CS2350 class project" />
-
+  <script type="module" src="./javascripts/main.js"></script>
   <link rel="stylesheet" href="./stylesheets/main.css" />
 </head>
 
 <body>
-
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-md">
       <div class=" navbar-collapse">
@@ -40,18 +39,53 @@
             </div>
           </li>
         </ul>
-        <button class="btn btn-success ms-auto" onclick="document.location='contact.html'">Contact Us</button>
       </div>
     </div>
   </nav>
 
-  <div class="jumbotron container-sm-fluid py-5" id="indexJumb">
-    <div class="py5 mx-5">
+  <div class="jumbotron container-fluid py-5" id="tron">
+    <div class="py5">
       <h1 class="display-1">
         Wildhorse Fashion
       </h1>
       <p class="text-white"> Elegance, Grace, Beauty</p>
     </div>
+  </div>
+  <div class="container my-3 mx-auto">
+    <h1>Contact</h1>
+    <div class="row">
+      <p class="fs-2">
+        We are your one stop shop for Historical Clothing.
+      </p>
+      <P class="fs-4">
+        Contact us today to get your order in. To get started fill out the form on this page and we’ll get back to you.
+      </P>
+    </div>
+
+    <div class="container py-4">
+      <form id="contactForm" >
+        <div class="mb-3">
+          <label class="form-label" for="name">Name</label>
+          <input class="form-control" id="name" type="text" placeholder="Name">
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="emailAddress">Email Address</label>
+          <input class="form-control" id="emailAddress" type="email" placeholder="Email Address">
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;">
+            </textarea>
+        </div>
+        <div class="d-grid">
+          <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+        </div>
+
+      </form>
+
+    </div>
+
+
   </div>
 
 

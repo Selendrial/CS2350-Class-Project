@@ -1,3 +1,105 @@
 /* Your styles go here */
 @import url("bootstrap/dist/css/bootstrap.min.css");
 @import url("bootstrap-icons/font/bootstrap-icons.css");
+
+:root {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-success, .btn-primary {
+  background-color: #f3abab;
+  border-color: #f3abab;
+}
+
+.btn-success:hover, .btn-success:active, .btn-success:visited, .btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+  background-color: #f37e7e;
+  border-color: #f37e7e;
+  
+}
+
+.dropdown-menu{
+  background-color: #f3abab;
+}
+
+.navbar-nav > li > .dropdown-menu a:link,
+.navbar-nav > li > .dropdown-menu a:hover { 
+  background-color: #f3abab;
+  color: white;
+}
+
+.nav-link, .nav-item, .navbar {
+  color: #f37e7e;
+}
+
+#indexJumb{
+  background-image: url('https://images.unsplash.com/photo-1551884831-bbf3cdc6469e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1274&q=80');
+  height:90vh;
+  background-size: cover;
+}
+
+#tron {
+    background-image: url(https://images.unsplash.com/photo-1551884831-bbf3cdc6469e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1274&q=80);
+    background-size: cover;
+    background-position:center;
+    
+ 
+}
+
+.display-1 {
+    color: white;
+}
+
+
+/* reviews */
+
+.blockquote{
+  font-size: 1rem;
+  width:100%;
+  margin:5px auto;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #f3abab ;
+  line-height:1.6;
+  position: relative;
+  background:lightgrey;
+}
+
+.blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#f3abab;
+  font-size: 4rem;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
+}
+
+/* end of reviews */
